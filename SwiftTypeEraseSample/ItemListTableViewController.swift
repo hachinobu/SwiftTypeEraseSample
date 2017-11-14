@@ -13,6 +13,9 @@ class ItemListTableViewController: UITableViewController {
 
     var request: TypeEraseQiitaRequest<[ItemEntity]>!
     
+    //Error: Protocol 'QiitaRequest' can only be used as a generic constraint because it has Self or associated type requirements.
+//    var request: QiitaRequest!
+    
     private var items: [ItemEntity]? {
         didSet {
             tableView.reloadData()
